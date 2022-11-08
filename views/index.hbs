@@ -1,0 +1,11 @@
+<h2>Данные из базы данных Users</h2>
+
+{{#if users.length}}
+<ul>
+  {{#each users}}
+  <li>{{ ID }} =  {{ first_name }}, {{ email }}</li>
+  {{/each}}
+</ul>
+{{else}}
+<p>База пустая!</p>
+{{/if}}
